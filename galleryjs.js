@@ -230,9 +230,9 @@ firebase.initializeApp(firebaseConfig);
 			  var imageUrl = myArray[i];
 
 			  if(i ==1 || i%3 == 0){
-				var htmlCode = '<div class="col-sm-12 col-md-4 col-lg-4"><a class="lightbox" href='+'"'+imageUrl+'"' +'><img class="img-fluid" src='+'"'+imageUrl+'"' +'alt="Gallery Images"></a></div>';  
+				var htmlCode = '<div class="col-sm-12 col-md-4 col-lg-4"><a class="lightbox"><img class="img-fluid" src='+'"'+imageUrl+'"' +'alt="Gallery Images"></a></div>';  
 			  }else{
-				var htmlCode = '<div class="col-sm-6 col-md-4 col-lg-4"><a class="lightbox" href='+'"'+imageUrl+'"' +'><img class="img-fluid" src='+'"'+imageUrl+'"' +'alt="Gallery Images"></a></div>';  
+				var htmlCode = '<div class="col-sm-6 col-md-4 col-lg-4"><a class="lightbox" ><img class="img-fluid" src='+'"'+imageUrl+'"' +'alt="Gallery Images"></a></div>';  
 			  }
      		  container.innerHTML += htmlCode;
 			}
